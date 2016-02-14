@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Team>
+	<TeamName>Football Club Zenit</TeamName>
+	<City>Sankt-Peterbugr</City>
+	<Player Num="1" Position="Goalkeeper">
+		<Name>Yury Lodygin</Name>
+		<Age>25</Age>
+	</Player>
+	<Player Num="7" Position="Forward">
+		<Name>Hulk</Name>
+		<Age>29</Age>
+	</Player>
+	<Player Num="22" Position="Forward">
+		<Name>Artyom Dzyuba</Name>
+		<Age>27</Age>
+	</Player>
+	<Player Num="6" Position="Defender">
+		<Name>Nicolas Lombaerts</Name>
+		<Age>30</Age>
+	</Player>
+	<Player Num="10" Position="Forward">
+		<Name>Danny</Name>
+		<Age>32</Age>
+	</Player>
+</Team>

@@ -1,0 +1,11 @@
+<!DOCTYPE Team [
+		<!ELEMENT Team (TeamName|City|Player)*>
+		<!ELEMENT TeamName (#PCDATA)>
+		<!ELEMENT City (#PCDATA)>
+		<!ELEMENT Player (Name|Age)*>
+		<!ATTLIST Player
+				Num CDATA #REQUIRED
+				Position CDATA #REQUIRED>
+		<!ELEMENT Name (#PCDATA)>
+		<!ELEMENT Age (#PCDATA)>
+		]>

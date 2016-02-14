@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Team [
+		<!ELEMENT Team (SampleCode|InstructionCode|TeamName|City|Player)*>
+		<!ELEMENT SampleCode (#PCDATA)>
+		<!ELEMENT InstructionCode (#PCDATA)>
+		<!ELEMENT TeamName (#PCDATA)>
+		<!ELEMENT City (#PCDATA)>
+		<!ELEMENT Player (Name|Age)*>
+		<!ATTLIST Player
+				Num CDATA #REQUIRED
+				PlayerID ID #REQUIRED
+				Position CDATA #REQUIRED>
+		<!ELEMENT Name (#PCDATA)>
+		<!ELEMENT Age (#PCDATA)>
+		]>
+<Team>
+	<SampleCode>
+		<![CDATA[<?xml version="1.0" encoding="utf-8"?>]]>
+	</SampleCode>
+	<!-- This is comment -->
+	<?refreshData targerID="t17"?>
+	<TeamName>Football Club Zenit</TeamName>
+	<City>Sankt-Peterbugr</City>
+	<Player Num="1" PlayerID="Player1" Position="Goalkeeper">
+		<Name>Yury Lodygin</Name>
+		<Age>25</Age>
+	</Player>
+	<Player Num="7" PlayerID="Player7" Position="Forward">
+		<!-- This is comment3 -->
+		<Name>Hulk</Name>
+		<Age>29</Age>
+	</Player>
+	<!-- This is comment2 -->
+	<Player Num="22" PlayerID="Player22" Position="Forward">
+		<Name>Artyom Dzyuba</Name>
+		<Age>27</Age>
+	</Player>
+	<Player Num="6" PlayerID="Player6" Position="Defender">
+		<Name>Nicolas Lombaerts</Name>
+		<Age>30</Age>
+	</Player>
+	<Player Num="10" PlayerID="Player10" Position="Forward">
+		<Name>Danny</Name>
+		<Age>32</Age>
+	</Player>
+</Team>

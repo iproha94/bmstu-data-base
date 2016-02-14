@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Team" type="TeamType"/>
+  <xs:complexType name="TeamType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="TeamName"/>
+      <xs:element type="xs:string" name="City"/>
+      <xs:element type="PlayerType" name="Player" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PlayerType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Name"/>
+      <xs:element type="xs:string" name="Age"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="Num" use="required"/>
+    <xs:attribute type="xs:string" name="Position" use="required"/>
+  </xs:complexType>
+</xs:schema>
